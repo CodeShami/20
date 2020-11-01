@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(grid_noise.png);
+}
+
+.container {
+  width: 50%;
+  margin: 150px auto 0;
+}
+
+ol {
+  counter-reset: item;
+  list-style-type: none;
+}
+li {
+  margin: 10px 0;
+}
+li:before {
+  content: counter(item) ") "; /*Добавляем к числам скобку*/
+  counter-increment: item; /*задаем имя счетчика*/
+}
+
+a {
+  width: 100%;
+  font-size: 12px;
+  padding-left: 50%;
+}
